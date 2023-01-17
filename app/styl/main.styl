@@ -1,13 +1,239 @@
-// Please delete before starting
+@font-face
+	font-family 'Overpass'
+	src url('../fonts/Overpass-VariableFont_wght.eot')
+	src local('☺'), url('../fonts/Overpass-VariableFont_wght.woff') format('woff'), url('../fonts/Overpass-VariableFont_wght.ttf') format('truetype'), url('../fonts/Overpass-VariableFont_wght.svg') format('svg')
+	font-weight normal
+	font-style normal
+@font-face {
+	font-family: 'Conv_Overpass-Bold';
+	src: url('../fonts/Overpass-Bold.eot');
+	src: local('☺'), url('../fonts/Overpass-Bold.woff') format('woff'), url('../fonts/Overpass-Bold.ttf') format('truetype'), url('../fonts/Overpass-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
 body
 	height 100vh
-	background-color: #0093E9;
-	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-	display flex
-	align-items center
-	justify-content center
-	font-size 16px
-	color #fff
+	font-size 18px
 	text-align center
-	flex-direction column
-	padding 30px
+	margin auto
+	line-height 1.5
+	font-family Overpass
+
+.icon
+	padding-top 2px
+	width 30px
+	height 30px
+
+.menu
+	background white
+	font-size 18px
+	max-width 1400px
+	display flex
+	flex-wrap nowrap
+	margin auto
+	padding 0px 10px
+	&__element
+		padding 15px
+		margin 10px
+		border-radius: 0.3rem
+		transition background-color .3s
+	&__element:hover
+		background-color lightgrey
+
+.main
+	background white
+	max-width 1400px
+	margin auto
+	&__overview
+		margin-bottom 50px
+		display flex
+		&__pict
+			width 55%
+			overflow hidden
+			display flex
+			position relative
+			&__bg
+				position absolute
+				background red
+				height 50%
+				width 100%
+				border-radius: 0.3rem
+			&__pic
+				padding 28px
+				position relative
+				overflow hidden
+				img
+					width 100%
+					position 50% 50%
+					border-radius: 0.3rem
+		&__article
+			width 45%
+			padding 0px 30px 10px 50px
+			margin 5px
+			text-align left
+			h1
+				font-size 50px
+			p
+				color #636363
+	&__firstGallery
+		max-width 1400px
+		display flex
+		flex-wrap wrap
+		justify-content space-evenly
+		margin-top 30px
+		&__element
+			margin 5px
+			padding 5px
+			width 30%
+			a
+				.image
+					margin-bottom 10px
+					img
+						width 100%
+						height 280px
+						border-radius: 0.3rem
+						transition 1s
+				.text
+					display flex
+					justify-content space-between
+	&__separator
+		margin 50px 0px
+		hr
+			margin-bottom 50px
+	&__secondGallery
+		max-width 1400px
+		display flex
+		flex-wrap wrap
+		justify-content center
+		margin-top 30px
+		&__element
+			margin 5px
+			padding 5px
+			width 40%
+			a
+				.image
+					margin-bottom 10px
+					img
+						height 380px
+						width 100%
+				.text
+					display flex
+					justify-content space-between
+	&__thirdGallery
+		max-width 1400px
+		display flex
+		flex-wrap wrap
+		justify-content center
+		margin-top 30px
+		padding-bottom 50px
+		&__element
+			margin 5px
+			margin-bottom 15px
+			padding 5px
+			width 30%
+			a
+				display flex
+				.image
+						height 80px
+						width 120px
+					img
+						height 80px
+						width 120px
+				.text
+					width 70%
+					text-align left
+					padding-left 10px
+
+footer
+	background black
+	color white
+	width 100%
+	padding 0px 100px
+	padding-top 100px
+	padding-bottom 20px
+	color grey
+	text-align right
+
+.main, .menu
+	a
+		font-weight bold
+		color black
+		text-decoration none
+		.image
+			overflow hidden
+			border-radius 0.3rem
+			img
+				border-radius: 0.3rem
+				transition 1s
+		.text
+			span
+				background-image linear-gradient(currentColor, currentColor)
+				background-position 0% 100%
+				background-repeat no-repeat
+				background-size 0% 1px
+				transition background-size .3s
+				padding 5px 0px
+				margin-bottom 10px
+	a:hover
+		.text
+			span
+				background-size 100% 1px
+		.image
+			img
+				transform scale(1.1)
+
+.bridge_main
+	background white
+	margin auto
+	position relative
+	&__title
+		padding 100px
+		background black
+		color white
+		margin auto
+		&__text
+			font-size 30px
+			padding 10px
+			margin auto
+			max-width 1400px
+			text-align left
+			span
+				color red
+	&__bgblock
+		background black
+		color white
+		width 100%
+		padding 100px
+		position absolute
+	&__article
+		margin auto
+		margin-bottom 50px
+		max-width 1400px
+		position relative
+		display flex
+		&__leftblock
+			width 66%
+			.image
+				img
+					border-radius: 0.3rem
+					width 95%
+			.text
+				margin 20px 30px
+				padding 5px
+				text-align left
+				color #636363
+		&__rightblock
+			width 33%
+			&__info
+				padding 10px
+				background white
+				border-radius: 0.3rem
+				box-shadow 0 0.01rem 2rem rgb(30 30 30)
+				p
+					text-align left
+
+table
+	margin 40px auto
+	
+@import media

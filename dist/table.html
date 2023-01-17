@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/love-amsterdam-sans-filled"/>
+    <title>Таблица</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu__element"> <a href="index.html"> 
+          <div class="text"><span>Главная страница</span></div></a></div>
+      <div class="menu__element"> <a href="BridgePage.html">
+          <div class="text"><span>Пример страницы моста</span></div></a></div>
+      <div class="menu__element"> <a href="table.html"> 
+          <div class="text"><span>Таблица</span></div></a></div>
+    </div>
+    <details>
+      <summary>Построить график</summary>
+      <form>
+        <table>
+          <tr>
+            <th>Значение по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td><input type = "radio" name = "first" value = "0">Тип<br>
+<input type = "radio" name = "first" value = "1">Страна<br>
+<input type = "radio" name = "first" value = "2">Год<br><br/>
+            </td>
+            <td><input type = "radio" name = "second" value = "0">Количество мостов<br>
+<input type = "radio" name = "second" value = "1">Максимальная высота<br>
+<input type = "radio" name = "second" value = "2">Наибольшая длина<br>
+            </td>
+          </tr>
+        </table>
+        <input type="button" value="Построить"/>
+      </form>
+    </details>
+    <details>
+      <summary>Отфильтровать</summary>
+      <form><p>
+<label>Название: 
+        <input type="text" name="bridgeName"/></label>
+</p>
+<p>
+<label>Тип: 
+        <input type="text" name="bridgeType"/></label>
+</p>
+<p>
+<label>Страна: 
+        <input type="text" name="bridgeCountry"/></label>
+</p>
+<p>
+<label>
+        <p>Год: от </p>
+        <input type="text" name="yearFrom"/>
+        <p>до </p>
+        <input type="text" name="yearTo"/></label>
+</p>
+<p>
+<label>
+        <p>Длина: от </p>
+        <input type="text" name="lengthTFrom"/>
+        <p>до </p>
+        <input type="text" name="lengthTo"/></label>
+</p>
+      </form>
+    </details>
+    <details>
+      <summary>Отсортировать</summary>
+      <form><p>
+        <p>Первый уровень: </p>
+        <select name="sortFirst">
+          <option value="0">Нет</option>
+          <option value="1">Название</option>
+          <option value="2">Тип</option>
+          <option value="3">Страна</option>
+          <option value="4">Год</option>
+          <option value="5">Длина</option>
+        </select></p>
+<p>
+        <p>Второй уровень: </p>
+        <select name="sortSecond">
+          <option value="0">Нет</option>
+          <option value="1">Название</option>
+          <option value="2">Тип</option>
+          <option value="3">Страна</option>
+          <option value="4">Год</option>
+          <option value="5">Длина</option>
+        </select></p>
+<p>
+        <p>Третий уровень: </p>
+        <select name="sortThird">
+          <option value="0">Нет</option>
+          <option value="1">Название</option>
+          <option value="2">Тип</option>
+          <option value="3">Страна</option>
+          <option value="4">Год</option>
+          <option value="5">Длина</option>
+        </select></p>
+      </form>
+    </details>
+    <hr/>
+    <table border="2" cellspacing="0" cellpadding="5"><tr>
+<th>Название</th>
+<th>Тип</th>
+<th>Страна</th>
+<th>Год</th>
+<th>Длина, м</th>
+</tr>
+<tr>
+<td>Мост Хеликс</td>
+<td>Пешеходный</td>
+<td>Сингапур</td>
+<td>2010</td>
+<td>280</td>
+</tr>
+<tr>
+<td>Часовенный мост</td>
+<td>Пешеходный</td>
+<td>Швейцария</td>
+<td>1333</td>
+<td>205</td>
+</tr>
+<tr>
+<td>Мост Ченъян</td>
+<td>Пешеходный</td>
+<td>Китай</td>
+<td>1916</td>
+<td>64.4</td>
+</tr>
+<tr>
+<td>Мост Роллинг</td>
+<td>Пешеходный</td>
+<td>Англия</td>
+<td>2004</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Небесный мост Лангкави</td>
+<td>Пешеходный</td>
+<td>Малайзия</td>
+<td>2005</td>
+<td>125</td>
+</tr>
+<tr>
+<td>Мост Миллениум в Гейтсхеде</td>
+<td>Пешеходный</td>
+<td>Англия</td>
+<td>2002</td>
+<td>126</td>
+</tr>
+<tr>
+<td>Старый мост</td>
+<td>Пешеходный</td>
+<td>Босния и Герцеговина</td>
+<td>1566</td>
+<td>29</td>
+</tr>
+<tr>
+<td>Мост Акаши-Кайкё</td>
+<td>Автомобильный</td>
+<td>Япония</td>
+<td>1998</td>
+<td>3911</td>
+</tr>
+<tr>
+<td>Мост Риальто</td>
+<td>Пешеходный</td>
+<td>Италия</td>
+<td>1181</td>
+<td>48</td>
+</tr>
+<tr>
+<td>Мост Октавио Фриас де Оливейра</td>
+<td>Автомобильный</td>
+<td>Бразилия</td>
+<td>2008</td>
+<td>1600</td>
+</tr>
+<tr>
+<td>Мост Слауерхоффа</td>
+<td>Автомобильный</td>
+<td>Нидерланды</td>
+<td>2000</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Русский мост</td>
+<td>Автомобильный</td>
+<td>Россия</td>
+<td>2012</td>
+<td>3100</td>
+</tr>
+<tr>
+<td>Мост СиДу</td>
+<td>Автомобильный</td>
+<td>Китай</td>
+<td>2009</td>
+<td>1222</td>
+</tr>
+<tr>
+<td>Виадук Мийо</td>
+<td>Автомобильный</td>
+<td>Франция</td>
+<td>2004</td>
+<td>2460</td>
+</tr>
+<tr>
+<td>Даньян-Куньшаньский виадук</td>
+<td>Железнодорожный</td>
+<td>Китай</td>
+<td>2011</td>
+<td>164800</td>
+</tr>
+<tr>
+<td>Мост Хаджу</td>
+<td>Пешеходный</td>
+<td>Иран</td>
+<td>1650</td>
+<td>133</td>
+</tr>
+<tr>
+<td>Бруклинский мост</td>
+<td>Автомобильный, пешеходный</td>
+<td>США</td>
+<td>1883</td>
+<td>1834</td>
+</tr>
+<tr>
+<td>Харбор-Бридж в Сиднее</td>
+<td>Автомобильный, пешеходный, железнодорожный</td>
+<td>Австралия</td>
+<td>1932</td>
+<td>1149</td>
+</tr>
+<tr>
+<td>Мост Александра III</td>
+<td>Автомобильный</td>
+<td>Франция</td>
+<td>1900</td>
+<td>152</td>
+</tr>
+<tr>
+<td>Мост «Золотые ворота»</td>
+<td>Автомобильный, пешеходный</td>
+<td>США</td>
+<td>1937</td>
+<td>2737</td>
+</tr>
+    </table>
+    <footer>
+      <p>©copyright</p>
+    </footer>
+  </body>
+</html>

@@ -3,18 +3,102 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title></title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/love-amsterdam-sans-filled"/>
   </head>
   <body>
-    <p>Successfully!</p>
-    <p>Now you have Browser Sync, Pug, Stylus, Autoprefixer, jQuery, Bootstrap Reboot</p>
-    <p>Folder src/ for PSD templates, JPG previews etc.</p>
-    <p>Folder app/ for Pug and Stylus files. app/pug/index.pug will transpiled to dist/index.html. app/styl/main.styl will transpiled to dist/css/main.css</p>
-    <p>Folder dist/ - distributive folder - here transpiled index.html and css/main.css, and you can add here other CSS, JS, IMG, FONTS files</p>
-    <p>Have a nice coding :)</p>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <svg display="none">
+      <symbol id="arrow" viewBox="0 0 24 24">
+        <g><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></g>
+      </symbol>
+    </svg>
+    <div class="menu">
+      <div class="menu__element"> <a href="index.html"> 
+          <div class="text"><span>Главная страница</span></div></a></div>
+      <div class="menu__element"> <a href="BridgePage.html">
+          <div class="text"><span>Пример страницы моста</span></div></a></div>
+      <div class="menu__element"> <a href="table.html"> 
+          <div class="text"><span>Таблица</span></div></a></div>
+    </div>
+    <div class="main">
+      <div class="main__overview">
+        <div class="main__overview__pict">
+          <div class="main__overview__pict__bg"></div>
+          <div class="main__overview__pict__pic"><img src="img/OverviewPict.jpg"/></div>
+        </div>
+        <div class="main__overview__article"><h1>Сайт про мосты</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <h2>Интересные мосты</h2>
+      <div class="main__firstGallery">
+        <div class="main__firstGallery__element"><a href="#">
+            <div class="image"> <img src="img/Gateshead_Millennium_Bridge2.jpg"/></div>
+            <div class="text"><span>Мост миллениум в Гейтсхеде</span>
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 24 24" width="512" height="512"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg></div>
+            </div></a></div>
+        <div class="main__firstGallery__element"><a href="#">
+            <div class="image"> <img src="img/Russkiy_Most1.jpg"/></div>
+            <div class="text"><span>Русский мост</span>
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 24 24" width="512" height="512"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg></div>
+            </div></a></div>
+        <div class="main__firstGallery__element"><a href="#">
+            <div class="image"> <img src="img/Royal-Gorge-Bridge1.jpg"/></div>
+            <div class="text"><span>Мост через Королевское ущелье</span>
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 24 24" width="512" height="512"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg></div>
+            </div></a></div>
+      </div>
+      <div class="main__separator">
+        <hr/>
+        <h2>Российские мосты</h2>
+      </div>
+      <div class="main__secondGallery">
+        <div class="main__secondGallery__element"><a href="#">
+            <div class="image"> <img src="img/Zolotoy_Most.jpg"/></div>
+            <div class="text"><span>Золотой мост</span>
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 24 24" width="512" height="512"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg></div>
+            </div></a></div>
+        <div class="main__secondGallery__element"><a href="#">
+            <div class="image"> <img src="img/Krimskiy_Most.jpg"/></div>
+            <div class="text"><span>Крымский мост</span>
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 24 24" width="512" height="512"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg></div>
+            </div></a></div>
+      </div>
+      <div class="main__separator">
+        <hr/>
+        <h2>Китайские мосты</h2>
+      </div>
+      <div class="main__thirdGallery">
+        <div class="main__thirdGallery__element"><a href="#">
+            <div class="image"> <img src="img/Marko_Polo_Bridge.jpg"/></div>
+            <div class="text"><span>Мост Марко Поло</span></div></a></div>
+        <div class="main__thirdGallery__element"><a href="#">
+            <div class="image"> <img src="img/Glass_Bridge.jpg"/></div>
+            <div class="text"><span>Стеклянный мост Чжанцзяцзе</span></div></a></div>
+        <div class="main__thirdGallery__element"><a href="#">
+            <div class="image"> <img src="img/Duge_Bridge.jpg"/></div>
+            <div class="text"><span>Мост Дугэ</span></div></a></div>
+        <div class="main__thirdGallery__element"><a href="#">
+            <div class="image"> <img src="img/Tianxingzhou_Bridge.jpg"/></div>
+            <div class="text"><span>Мост Тяньсинчжоу</span></div></a></div>
+        <div class="main__thirdGallery__element"><a href="#">
+            <div class="image"> <img src="img/Humen_Bridge.jpg"/></div>
+            <div class="text"><span>Мост Хумэнь</span></div></a></div>
+        <div class="main__thirdGallery__element"><a href="#">
+            <div class="image"> <img src="img/Shanghai_Bridge.jpg"/></div>
+            <div class="text"><span>Шанхайские мост через Янцзы</span></div></a></div>
+      </div>
+    </div>
+    <footer>
+      <p>©copyright</p>
+    </footer>
   </body>
 </html>
